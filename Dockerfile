@@ -49,7 +49,7 @@ RUN apt-get update -qq && \
     chown -R app:app /var/lib/nginx && \
     chown -R app:app /run    
 
-USER ${APP_ID_NAME}
+USER root
 
 WORKDIR /home/app/webapp
 
