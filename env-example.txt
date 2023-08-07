@@ -2,7 +2,7 @@
 RAILS_ENV=development
 MYSQL_ROOT_PASSWORD=myrootpassword
 MYSQL_USER=geoblacklight_user
-MYSQL_PASSWORD=password
+MYSQL_PASSWORD=
 MYSQL_DB=geoblacklight_local_db
 MYSQL_HOST=mysql
 MYSQL_PORT=3306:3306
