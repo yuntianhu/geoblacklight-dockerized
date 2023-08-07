@@ -39,7 +39,7 @@ RUN apt-get update -qq && \
     rm -f /etc/service/nginx/down && \
     chmod +x /home/app/webapp/bin/*.sh && \
     chown app /etc/ssl/certs && \
-    chmod 777 /var/run/mysqld/mysqld.sock &&\
+    chmod 777 /var/run/mysqld/mysqld.sock && \
     chown app /etc/ssl/openssl.cnf && \
     chown -R app:app /etc/container_environment && \
     chmod -R 755 /etc/container_environment && \
