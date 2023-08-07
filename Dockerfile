@@ -6,6 +6,7 @@ ARG APP_ID_NAME=app
 COPY --chown=app:app . /home/app/webapp
 
 RUN apt-get update -qq && \
+    apt-get install python3-dev git -y && \
     apt-get install -y \
                        cmake \
                        gcc \
