@@ -60,4 +60,4 @@ RUN gem update --system && \
     chmod 755 /home/app/webapp/tmp/cache/downloads && \
     mkdir -p /home/app/webapp/tmp/pids
 
-CMD ["passenger", "start", "--port", "4000", "--log-file", "/dev/stdout", "--no-install-runtime", "--no-compile-runtime","--max-pool-size", "15", "--min-instances", "15", "--nginx-config-template","ops/nginx.conf.erb"]
+CMD ["passenger", "start", "--port", "4000", "--log-file", "/dev/stdout", "--no-install-runtime","service mysql start", "--no-compile-runtime","--max-pool-size", "15", "--min-instances", "15", "--nginx-config-template","ops/nginx.conf.erb"]
