@@ -34,7 +34,7 @@ services:
     env_file: .env
     tty: true
     ports:
-      - "21800:4000"
+      - "21800:3000"
     depends_on:
       - mysql
     networks:
