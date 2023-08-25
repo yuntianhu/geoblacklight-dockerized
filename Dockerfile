@@ -47,7 +47,7 @@ RUN apt-get update -qq && \
     chmod 644 /etc/container_environment.sh /etc/container_environment.json && \
     chown -R app:app /var/log/nginx && \
     chown -R app:app /var/lib/nginx && \
-    chown -R app:app /run  && \
+    chown -R app:app /run  
 
 
 USER root
