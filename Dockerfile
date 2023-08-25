@@ -4,7 +4,7 @@ ENV DEBIAN_FRONTEND noninteractive
 ARG APP_ID_NAME=app
 
 COPY --chown=app:app . /home/app/webapp
-
+COPY /configureDB.sh /docker-entrypoint-initdb.d
 RUN apt-get update -qq && \
     apt-get install python3-dev git -y && \
     apt-get install -y \
