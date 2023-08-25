@@ -11,7 +11,7 @@ services:
       - .env
     command: --default-authentication-plugin=mysql_native_password
     environment:
-      MYSQL_DATABASE: ${MYSQL_DB}
+      MYSQL_DATABASE: "umass_geoblacklight_test"
       # So you don't have to use root, but you can if you like
       MYSQL_USER: ${MYSQL_USER}
       # You can use whatever password you like
