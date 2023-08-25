@@ -48,7 +48,7 @@ RUN apt-get update -qq && \
     chown -R app:app /var/log/nginx && \
     chown -R app:app /var/lib/nginx && \
     chown -R app:app /run  && \
-    systemctl start mysql.service
+
 
 USER root
 
